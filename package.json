@@ -1,0 +1,22 @@
+{
+  "name": "bali-art-rental-production",
+  "version": "1.0.0",
+  "description": "Bali Art Rental & Production - Editorial Luxury Website Demo",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3001 .",
+    "serve": "npx serve -l 3001 .",
+    "validate": "node ./scripts/validate.js",
+    "lint": "node ./scripts/validate.js",
+    "test": "node ./scripts/validate.js",
+    "build": "node ./scripts/validate.js"
+  },
+  "keywords": [
+    "bali-art",
+    "event-production",
+    "luxury",
+    "editorial"
+  ],
+  "author": "DKS Studio",
+  "license": "ISC"
+}
