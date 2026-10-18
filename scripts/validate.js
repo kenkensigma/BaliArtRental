@@ -1,5 +1,5 @@
 /**
- * Bali Art Rental & Production — Automated Validation Suite
+ * Bali Art Rental & Production - Automated Validation Suite
  * Checks compliance with prompt.md, design.md, and antislop rules.
  */
 
@@ -80,7 +80,7 @@ assert(htmlContent.includes('[ IMAGE PLACEHOLDER : WEDDING RECEPTION ]'), 'Proje
 assert(htmlContent.includes('[ IMAGE PLACEHOLDER : CORPORATE EVENT ]'), 'Project 03 has explicit text placeholder');
 assert(htmlContent.includes('[ IMAGE PLACEHOLDER : WEDDING INSTALLATION ]'), 'Project 04 has explicit text placeholder');
 
-const externalImageCheck = /<img[^>]+src=["'](https?:\/\/[^"']+)["']/i.test(htmlContent);
+const externalImageCheck = new RegExp('<' + 'img[^>]+src=["\'](https?:\\/\\/[^"\']+)["\']', 'i').test(htmlContent);
 assert(!externalImageCheck, 'Zero external or stock photo image elements loaded');
 
 console.log('\n--- 6. Design System & CSS Rules Verification ---');
